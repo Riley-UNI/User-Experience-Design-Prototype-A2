@@ -1,19 +1,15 @@
 :root {
     --bs-body-font-family: 'Roboto', sans-serif;
     --base-textcolor: black;
-    --base-contrasttextcolor: white;
-    --base-aboutbackground: white;
+    --base-whiteToblack: white;
     --base-introbackground: rgb(217, 164, 41);
-    --navbar-buttoncolor: white;
 
 }
 .darkmode{
     --bs-body-font-family: 'Roboto', sans-serif;
     --base-textcolor: white;
-    --base-contrasttextcolor: black;
-    --base-aboutbackground: black;
+    --base-whiteToblack: black;
     --base-introbackground: rgb(82, 16, 73);
-    --navbar-buttoncolor: black;
 
 }
 
@@ -25,7 +21,7 @@
 }
 
 #about-container {
-  background-color: var(--base-aboutbackground);
+  background-color: var(--base-whiteToblack);
   color: var(--base-textcolor);
 }
 
@@ -65,7 +61,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
     right: 20px;
 }
 #theme-switch svg{
-    fill: var(--base-aboutbackground)
+    fill: var(--base-whiteToblack)
 }
 #theme-switch svg:last-child{
     display: none;

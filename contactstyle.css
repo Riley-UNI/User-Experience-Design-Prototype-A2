@@ -1,5 +1,17 @@
 :root {
     --bs-body-font-family: 'Roboto', sans-serif;
+    --base-blackTowhite: black;
+    --base-whiteToblack: white;
+    --base-introbackground: rgb(217, 164, 41);
+    --base-whiteToDarkGrey: white;
+
+}
+.darkmode{
+    --bs-body-font-family: 'Roboto', sans-serif;
+    --base-blackTowhite: white;
+    --base-whiteToblack: black;
+    --base-introbackground: rgb(82, 16, 73);
+    --base-whiteToDarkGrey: rgb(78, 77, 77);
 }
 
 #navbar-buttons {
@@ -19,7 +31,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   justify-content: center;
 }
 form{
-    background: white;
+    background: var(--base-whiteToDarkGrey);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -28,7 +40,7 @@ form{
     border-radius: 10px;
 }
 form h3{
-    color: black;
+    color: var(--base-blackTowhite);
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -52,4 +64,30 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgb(88, 94, 88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+#theme-switch svg{
+    fill: var(--base-whiteToblack)
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display: block;
 }
