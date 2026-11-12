@@ -1,0 +1,16 @@
+:root {
+    --bs-body-font-family: 'Roboto', sans-serif;
+}
+
+#navbar-buttons {
+ border: 2px solid white;
+
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#main-container {
+background-image: linear-gradient(rgba(99, 93, 93, 0.75), rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jpg'); background-size: cover; background-position: center; height: 1000px;
+  color: white;
+}
