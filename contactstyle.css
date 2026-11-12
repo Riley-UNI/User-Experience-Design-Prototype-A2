@@ -11,6 +11,8 @@
 }
 
 #main-container {
-background-image: linear-gradient(rgba(99, 93, 93, 0.75), rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jpg'); background-size: cover; background-position: center; height: 1000px;
+  width: 100vw;
+  height: 100vh;
+background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jpg'); background-size: cover; background-position: center;
   color: white;
 }
