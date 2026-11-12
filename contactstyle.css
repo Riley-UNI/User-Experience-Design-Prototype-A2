@@ -1,3 +1,4 @@
+/* Sets font as a varible so it will be rendered in HTML and sets colours as varibles for dark mode */
 :root {
     --bs-body-font-family: 'Roboto', sans-serif;
     --base-blackTowhite: black;
@@ -6,6 +7,7 @@
     --base-whiteToDarkGrey: white;
 
 }
+/* Keeps the font the same but sets the opposite colours for when the page is set to darkmode */
 .darkmode{
     --bs-body-font-family: 'Roboto', sans-serif;
     --base-blackTowhite: white;
@@ -13,7 +15,7 @@
     --base-introbackground: rgb(82, 16, 73);
     --base-whiteToDarkGrey: rgb(78, 77, 77);
 }
-
+/* Sets the border around the Navbar buttons to improve locating the buttons for the vision impaired */
 #navbar-buttons {
  border: 2px solid white;
 
@@ -22,6 +24,9 @@
   cursor: pointer;
 }
 
+/* Styles the main container so that the width and height go to the maximum viewpoint */
+/* Important note, rgba was inspired by AI as I could not get a transulent colour to work, however it had been modified by me
+to get it to function better and optimal */
 #main-container {
   width: 100vw;
   height: 100vh;
@@ -30,6 +35,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   align-items: center;
   justify-content: center;
 }
+/* Sets the style and correct size for the box the email form sits in while setting dark mode options */
 form{
     background: var(--base-whiteToDarkGrey);
     display: flex;
@@ -39,11 +45,13 @@ form{
     max-width: 600 px;
     border-radius: 10px;
 }
+/* Sets the heading 3 text size and colour */
 form h3{
     color: var(--base-blackTowhite);
     font-weight: 800;
     margin-bottom: 20px;
 }
+/* Sets the users inputs and automatic filling size, format, color and format for it to be read easily for the visually imapired */
 form input, form textarea{
     border: 0;
     margin: 10px 0;
@@ -53,6 +61,7 @@ form input, form textarea{
     font-size: 20px;
     font-weight: bold;
 }
+/* Styles the submit button with its size, color and bold text to make the submit button easy to read and understand */
 form button{
     padding: 15px;
     background: red;
@@ -67,6 +76,7 @@ form button{
     border-radius: 30px;
 }
 
+/* Sets the style and size of the darkmode button and aligns it to the right hand side of the screen. Keeps it visible and overlays the Navbar with z-index */
 #theme-switch{
     height: 50px;
     width: 50px;
@@ -81,15 +91,19 @@ form button{
     right: 20px;
     z-index: 1;
 }
+/* Makes the icon of the darkmode button white so it contrasts with its dark grey background */
 #theme-switch svg{
-    fill: var(--base-whiteToblack)
+    fill: white
 }
+/* Hides the sun icon as it by default show both icons */
 #theme-switch svg:last-child{
     display: none;
 }
+/* Hides the moon icon */
 .darkmode #theme-switch svg:first-child{
     display: none;
 }
+/* Switches the sun icon for the moon icon back again */
 .darkmode #theme-switch svg:last-child{
     display: block;
 }

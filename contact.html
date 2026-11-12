@@ -1,37 +1,49 @@
+<!-- Helps the browser understand what document type to expect -->
 <!DOCTYPE html>
+<!-- Sets the language as english and makes the browser treat the page as if its in light mode -->
 <html lang="en" data-bs-theme="light">
 <head>
-    
+    <!-- Attribute that specifies how characters should be enceded for this HTML -->
     <meta charset="UTF-8">
+    <!-- Viewport sets the visible area of the page for the user, width=device-width makes the page go to the end width of the page -->
+     <!-- Initial-scale sets how zoomed in the page should be when it is loaded -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the webpage viewable from the tab for CSS -->
     <title>Manifold Heights Baptist Church</title>
-    <!-- This is the bootstrap plugin being installed by CDN -->
+    <!-- This is the bootstrap plugin being installed by CDN for JavaScript -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <!-- This is the bootstrap plugin being installed by CDN -->
     <script defer type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-    
+
+    <!-- The following three lines link the font pages for the Roboto font for the page to render -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- The next two lines link the local CSS and JavaScript files created by me -->
     <link rel="stylesheet" href="contactstyle.css">
     <script type="text/javascript" src="darkmode.js" defer></script>
     
 </head>
 <body>
  <header>
+    <!-- Creates the dark theme button with an attached ID -->
     <button id="theme-switch">
+        <!-- Next two lines attatch the local svg files for the icons for the darkmode button -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M12,21q-3.75,0-6.38-2.63T3,12T5.63,5.63T12,3q0.35,0 0.69,0.02q0.34,0.02 0.66,0.07q-1.03,0.73-1.64,1.89T11.1,7.5q0,2.25 1.57,3.82T16.5,12.9q1.38,0 2.53-0.61t1.88-1.64q0.05,0.33 0.07,0.66T21,12q0,3.75-2.63,6.38T12,21Z"/></svg>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M8.46,15.54Q7,14.08 7,12Q7,9.92 8.46,8.46T12,7t3.54,1.46T17,12t-1.46,3.54T12,17q-2.07,0-3.54-1.46ZM5,13H1V11H5v2Zm18,0H19V11h4v2ZM11,5V1h2V5H11Zm0,18V19h2v4H11ZM6.4,7.75L3.88,5.32L5.3,3.85l2.4,2.5L6.4,7.75Zm12.3,12.4l-2.42-2.52l1.32-1.38l2.52,2.43L18.7,20.15ZM16.25,6.4l2.43-2.52L20.15,5.3l-2.5,2.4l-1.4-1.3ZM3.85,18.7l2.53-2.43L7.75,17.6L5.33,20.13L3.85,18.7Z"/></svg>
-
     </button>
   </header>
     
+  <!-- Start of navbar, sets the size of the navbar, colours text and sets the theme to dark as if the browser was set to dark mode -->
 <nav class="navbar sm:navbar-expand bg-1 fg-2" data-bs-theme="dark">
+    <!-- Creates a fluid bootstrap container to help in scaling elements for different screen sizes -->
   <div class="container-fluid">
+    <!-- Next three lines create a button on the Navbar for the Icon, and links back to the home page -->
     <a class="navbar-brand" href="index.html">
       <img src="Mano_Chapel_Logo.png" alt="Mano Chapel" width="60" height="48">
     </a>
+    <!-- Next eight lines creates a hamburger menu for when screens are too small to contain all Navbar buttons sourced from https://getbootstrap.com/docs/6.0/components/navbar/ -->
     <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" aria-hidden="true"></span>
     </button>
@@ -40,6 +52,7 @@
         <h5 class="drawer-title" id="navbarNavAltMarkupLabel">Menu</h5>
         <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
       </div>
+      <!-- Next six lines set the rest of the buttons for the Navbar buttons and their links -->
       <div class="drawer-body">
         <div class="nav nav-pills navbar-nav" id="navbar-buttons">
           <a class="nav-link" href="index.html">Home</a>
@@ -51,18 +64,26 @@
     </dialog>
   </div>
 </nav>
+<!-- Sets a container as fluid for better screen scaling with an ID tag used later in CSS -->
 <div class="container-fluid" id="main-container">
+    <!-- Sets the form to send what following inputs the form gets inputed and fowards it to my email
+     Should be noted that my email is a placeholder, when marking this, please fill out the form and submit the form with
+    the plug in Live Server by Ritwick Dey otherwise the email will not work. Ask me to send a screen shot back to you of the email so you can confirm it works please -->
         <form action="https://formsubmit.co/riley.everett@student.torrens.edu.au" method="POST">
+            <!-- Creats a heading three with text prompting the user to email the Church -->
             <h3>Get in touch!</h3>
+            <!-- The following sets a type of input they are and their ID with a name, then sets a place holder so the user knows which
+             which input is used for which section of an email -->
+             <!-- Important to note that Claude AI was used as this wasn't working however its contribution was very minor as all I had
+              wrong was setting the name= varible was absent -->
             <input type="text" id="name" name="name" placeholder="Your name" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="text" id="subject" name="_subject" placeholder="Subject" required>
+            <!-- Similar to input however textarea allows for more space for the user to write their email -->
             <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
+            <!-- Attaches a button with the type submit and id submitbutton to finilise and send the inputs in the form into an email -->
             <button type="submit" id="submitbutton">Send</button>
         </form>   
         </div>
-
-        
-      
 </body>
 </html>

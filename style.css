@@ -1,3 +1,4 @@
+/* Sets font as a varible so it will be rendered in HTML and sets colours as varibles for dark mode */
 :root {
     --bs-body-font-family: 'Roboto', sans-serif;
     --base-textcolor: black;
@@ -5,6 +6,7 @@
     --base-introbackground: rgb(217, 164, 41);
 
 }
+/* Keeps the font the same but sets the opposite colours for when the page is set to darkmode */
 .darkmode{
     --bs-body-font-family: 'Roboto', sans-serif;
     --base-textcolor: white;
@@ -13,23 +15,27 @@
 
 }
 
-
+/* Sets colours for the intro-container */
 #intro-container {
   background-color: var(--base-introbackground);
   color: var(--base-textcolor);
   
 }
-
+/* Sets colours for the about container */
 #about-container {
   background-color: var(--base-whiteToblack);
   color: var(--base-textcolor);
 }
-
+/* Sets colours for the end container and its minumum height of 300px, while adding an image and ensure it covers the container
+without overflowing */
+/* Important note, rgba was inspired by AI as I could not get a transulent colour to work, however it had been modified by me
+to get it to function better and optimal */
 #end-container {
 background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jpg'); background-size: cover; background-position: center; min-height: 300px;
   color: white;
 }
 
+/* Sets the border around the Navbar buttons to improve locating the buttons for the vision impaired */
 #navbar-buttons {
  border: 2px solid white;
 
@@ -37,7 +43,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   font-size: 20px;
   cursor: pointer;
 }
-
+/* Colors and creates a rounded box around the button for the link to the Youtube Channel */
 #livestream-button {
      border-radius: 25px;
   background-color: white;
@@ -47,6 +53,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   cursor: pointer;
 }
 
+/* Sets the style and size of the darkmode button and aligns it to the right hand side of the screen. Keeps it visible and overlays the Navbar with z-index */
 #theme-switch{
     height: 50px;
     width: 50px;
@@ -61,15 +68,19 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
     right: 20px;
     z-index: 1;
 }
+/* Makes the icon of the darkmode button white so it contrasts with its dark grey background */
 #theme-switch svg{
-    fill: var(--base-whiteToblack)
+    fill: white
 }
+/* Hides the sun icon as it by default show both icons */
 #theme-switch svg:last-child{
     display: none;
 }
+/* Hides the moon icon */
 .darkmode #theme-switch svg:first-child{
     display: none;
 }
+/* Switches the sun icon for the moon icon back again */
 .darkmode #theme-switch svg:last-child{
     display: block;
 }
