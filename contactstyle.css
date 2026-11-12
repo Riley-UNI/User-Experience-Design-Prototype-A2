@@ -18,3 +18,12 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   align-items: center;
   justify-content: center;
 }
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600 px;
+    border-radius: 10px;
+}
