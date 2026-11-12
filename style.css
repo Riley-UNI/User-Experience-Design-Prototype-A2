@@ -1,16 +1,32 @@
 :root {
     --bs-body-font-family: 'Roboto', sans-serif;
+    --base-textcolor: black;
+    --base-contrasttextcolor: white;
+    --base-aboutbackground: white;
+    --base-introbackground: rgb(217, 164, 41);
+    --navbar-buttoncolor: white;
+
+}
+.darkmode{
+    --bs-body-font-family: 'Roboto', sans-serif;
+    --base-textcolor: white;
+    --base-contrasttextcolor: black;
+    --base-aboutbackground: black;
+    --base-introbackground: rgb(82, 16, 73);
+    --navbar-buttoncolor: black;
+
 }
 
+
 #intro-container {
-  background-color: rgb(217, 164, 41);
-  color: black;
+  background-color: var(--base-introbackground);
+  color: var(--base-textcolor);
   
 }
 
 #about-container {
-  background-color: white;
-  color: black;
+  background-color: var(--base-aboutbackground);
+  color: var(--base-textcolor);
 }
 
 #end-container {
@@ -33,4 +49,30 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   padding: 14px 28px;
   font-size: 30px;
   cursor: pointer;
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgb(88, 94, 88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+#theme-switch svg{
+    fill: var(--base-aboutbackground)
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display: block;
 }
