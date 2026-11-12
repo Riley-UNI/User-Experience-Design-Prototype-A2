@@ -57,8 +57,9 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 20px;
+    top: 100px;
     right: 20px;
+    z-index: 1;
 }
 #theme-switch svg{
     fill: var(--base-whiteToblack)
