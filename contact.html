@@ -16,6 +16,7 @@
     <script defer type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 
     <!-- The following three lines link the font pages for the Roboto font for the page to render -->
+     <!-- The following three lines to reference the roboto font are sourced from Robertson et al., https://fonts.google.com/specimen/Roboto, n.d.; ByteGrad, https://www.youtube.com/watch?v=x_u-njAPbWc&t=82s, 2022 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,6 +28,7 @@
 </head>
 <body>
  <header>
+  <!-- Code for darkmode and icons was sourced from Coding2GO, https://www.youtube.com/watch?v=_gKEUYarehE, 2024; Google, https://fonts.google.com/icons?selected=Material+Symbols+Outlined:light_mode:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=sun&icon.size=24&icon.color=%23e3e3e3, n.d.-a, Google, https://fonts.google.com/icons?selected=Material+Symbols+Outlined:dark_mode:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=dark+mode&icon.size=24&icon.color=%23e3e3e3 n.d.-b -->
     <!-- Creates the dark theme button with an attached ID -->
     <button id="theme-switch">
         <!-- Next two lines attatch the local svg files for the icons for the darkmode button -->
@@ -36,6 +38,7 @@
   </header>
     
   <!-- Start of navbar, sets the size of the navbar, colours text and sets the theme to dark as if the browser was set to dark mode -->
+   <!-- Code for navbar is sourced from GetBootstrap, https://getbootstrap.com/docs/6.0/components/navbar/#variables, n.d.-c -->
 <nav class="navbar sm:navbar-expand bg-1 fg-2" data-bs-theme="dark">
     <!-- Creates a fluid bootstrap container to help in scaling elements for different screen sizes -->
   <div class="container-fluid">
@@ -43,7 +46,7 @@
     <a class="navbar-brand" href="index.html">
       <img src="Mano_Chapel_Logo.png" alt="Mano Chapel" width="60" height="48">
     </a>
-    <!-- Next eight lines creates a hamburger menu for when screens are too small to contain all Navbar buttons sourced from https://getbootstrap.com/docs/6.0/components/navbar/ -->
+
     <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" aria-hidden="true"></span>
     </button>
@@ -69,6 +72,7 @@
     <!-- Sets the form to send what following inputs the form gets inputed and fowards it to my email
      Should be noted that my email is a placeholder, when marking this, please fill out the form and submit the form with
     the plug in Live Server by Ritwick Dey otherwise the email will not work. Ask me to send a screen shot back to you of the email so you can confirm it works please -->
+    <!-- Code for emailing the form from A Designer Who Codes, https://www.youtube.com/watch?v=Yg6POD0M30w&t=243s, 2021 -->
         <form action="https://formsubmit.co/riley.everett@student.torrens.edu.au" method="POST">
             <!-- Creats a heading three with text prompting the user to email the Church -->
             <h3>Get in touch!</h3>
@@ -76,6 +80,7 @@
              which input is used for which section of an email -->
              <!-- Important to note that Claude AI was used as this wasn't working however its contribution was very minor as all I had
               wrong was setting the name= varible was absent -->
+              <!-- Input fields were sourced from The Code City, https://www.youtube.com/watch?v=-O5Nlvh2c8s&t=290s, 2025 -->
             <input type="text" id="name" name="name" placeholder="Your name" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="text" id="subject" name="_subject" placeholder="Subject" required>

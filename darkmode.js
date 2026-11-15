@@ -1,3 +1,4 @@
+// Code for darkmode was sourced from Coding2GO, https://www.youtube.com/watch?v=_gKEUYarehE, 2024
 // Acquires the most current theme on the webpage from local storage
 let darkmode = localStorage.getItem('darkmode')
 // Grabs the button from HTML and defines it as const themeSwitch

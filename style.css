@@ -1,7 +1,8 @@
 /* Sets font as a varible so it will be rendered in HTML and sets colours as varibles for dark mode */
+/* Code for darkmode and font was sourced from Coding2GO, https://www.youtube.com/watch?v=_gKEUYarehE, 2024; ByteGrad, https://www.youtube.com/watch?v=x_u-njAPbWc&t=82s, 2022 */
 :root {
     --bs-body-font-family: 'Roboto', sans-serif;
-    --base-textcolor: black;
+    --base-blackTowhite: black;
     --base-whiteToblack: white;
     --base-introbackground: rgb(217, 164, 41);
 
@@ -9,7 +10,7 @@
 /* Keeps the font the same but sets the opposite colours for when the page is set to darkmode */
 .darkmode{
     --bs-body-font-family: 'Roboto', sans-serif;
-    --base-textcolor: white;
+    --base-blackTowhite: white;
     --base-whiteToblack: black;
     --base-introbackground: rgb(82, 16, 73);
 
@@ -18,24 +19,26 @@
 /* Sets colours for the intro-container */
 #intro-container {
   background-color: var(--base-introbackground);
-  color: var(--base-textcolor);
+  color: var(--base-blackTowhite);
   
 }
 /* Sets colours for the about container */
 #about-container {
   background-color: var(--base-whiteToblack);
-  color: var(--base-textcolor);
+  color: var(--base-blackTowhite);
 }
 /* Sets colours for the end container and its minumum height of 300px, while adding an image and ensure it covers the container
 without overflowing */
 /* Important note, rgba was inspired by AI as I could not get a transulent colour to work, however it had been modified by me
 to get it to function better and optimal */
+/* The same rgba function was also from this source W3Schools, https://www.w3schools.com/css/css3_colors.asp, n.d.-a */
 #end-container {
 background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jpg'); background-size: cover; background-position: center; min-height: 300px;
   color: white;
 }
 
 /* Sets the border around the Navbar buttons to improve locating the buttons for the vision impaired */
+/* Code sourced from W3Schools, https://www.w3schools.com/css/css3_borders.asp, n.d.-b */ 
 #navbar-buttons {
  border: 2px solid white;
 
@@ -44,6 +47,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   cursor: pointer;
 }
 /* Colors and creates a rounded box around the button for the link to the Youtube Channel */
+/* Code sourced from W3Schools, https://www.w3schools.com/howto/howto_css_outline_buttons.asp, n.d.-d */
 #livestream-button {
      border-radius: 25px;
   background-color: white;
@@ -54,6 +58,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
 }
 
 /* Sets the style and size of the darkmode button and aligns it to the right hand side of the screen. Keeps it visible and overlays the Navbar with z-index */
+/* Code for darkmode was sourced from Coding2GO, https://www.youtube.com/watch?v=_gKEUYarehE, 2024 */
 #theme-switch{
     height: 50px;
     width: 50px;

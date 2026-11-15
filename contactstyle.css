@@ -1,3 +1,4 @@
+/* Code for darkmode and font was sourced from Coding2GO, https://www.youtube.com/watch?v=_gKEUYarehE, 2024; ByteGrad, https://www.youtube.com/watch?v=x_u-njAPbWc&t=82s, 2022 */
 /* Sets font as a varible so it will be rendered in HTML and sets colours as varibles for dark mode */
 :root {
     --bs-body-font-family: 'Roboto', sans-serif;
@@ -16,6 +17,7 @@
     --base-whiteToDarkGrey: rgb(78, 77, 77);
 }
 /* Sets the border around the Navbar buttons to improve locating the buttons for the vision impaired */
+/* Code sourced from W3Schools, https://www.w3schools.com/css/css3_borders.asp, n.d.-b */ 
 #navbar-buttons {
  border: 2px solid white;
 
@@ -27,6 +29,7 @@
 /* Styles the main container so that the width and height go to the maximum viewpoint */
 /* Important note, rgba was inspired by AI as I could not get a transulent colour to work, however it had been modified by me
 to get it to function better and optimal */
+/* The same rgba function was also from this source W3Schools, https://www.w3schools.com/css/css3_colors.asp, n.d.-a */
 #main-container {
   width: 100vw;
   height: 100vh;
@@ -36,6 +39,7 @@ background-image: linear-gradient( rgba(99, 93, 93, 0.75)), url('Chapel_Photo.jp
   justify-content: center;
 }
 /* Sets the style and correct size for the box the email form sits in while setting dark mode options */
+/* Code for styling the email form is sourced from GreatStack, https://www.youtube.com/watch?v=sGQSz22U8VM&t=693s, 2021 */
 form{
     background: var(--base-whiteToDarkGrey);
     display: flex;
@@ -77,6 +81,7 @@ form button{
 }
 
 /* Sets the style and size of the darkmode button and aligns it to the right hand side of the screen. Keeps it visible and overlays the Navbar with z-index */
+/* Code for darkmode was sourced from Coding2GO, https://www.youtube.com/watch?v=_gKEUYarehE, 2024 */
 #theme-switch{
     height: 50px;
     width: 50px;

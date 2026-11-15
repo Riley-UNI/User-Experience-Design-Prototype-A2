@@ -16,6 +16,7 @@
     <script defer type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
     
     <!-- The following three lines link the font pages for the Roboto font for the page to render -->
+     <!-- The following three lines to reference the roboto font are sourced from Robertson et al., https://fonts.google.com/specimen/Roboto, n.d.; ByteGrad, https://www.youtube.com/watch?v=x_u-njAPbWc&t=82s, 2022 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,6 +28,7 @@
 </head>
 <body>
   <header>
+      <!-- Code for darkmode and icons was sourced from Coding2GO, https://www.youtube.com/watch?v=_gKEUYarehE, 2024; Google, https://fonts.google.com/icons?selected=Material+Symbols+Outlined:light_mode:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=sun&icon.size=24&icon.color=%23e3e3e3, n.d.-a, Google, https://fonts.google.com/icons?selected=Material+Symbols+Outlined:dark_mode:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=dark+mode&icon.size=24&icon.color=%23e3e3e3 n.d.-b -->
     <!-- Creates the dark theme button with an attached ID -->
     <button id="theme-switch">
       <!-- Next two lines attatch the local svg files for the icons for the darkmode button -->
@@ -37,6 +39,7 @@
   </header>
 
   <!-- Start of navbar, sets the size of the navbar, colours text and sets the theme to dark as if the browser was set to dark mode -->
+   <!-- Code for navbar is sourced from GetBootstrap, https://getbootstrap.com/docs/6.0/components/navbar/#variables, n.d.-c -->
 <nav class="navbar sm:navbar-expand bg-1 fg-2" data-bs-theme="dark">
   <!-- Creates a fluid bootstrap container to help in scaling elements for different screen sizes -->
   <div class="container-fluid">
@@ -44,7 +47,6 @@
     <a class="navbar-brand" href="index.html">
       <img src="Mano_Chapel_Logo.png" alt="Mano Chapel" width="60" height="48">
     </a>
-    <!-- Next eight lines creates a hamburger menu for when screens are too small to contain all Navbar buttons sourced from https://getbootstrap.com/docs/6.0/components/navbar/ -->
     <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" aria-hidden="true"></span>
     </button>
@@ -74,6 +76,7 @@
       <!-- Sets a heading 1 with sizing options and making the text bold -->
       <h1 class="display-1 fw-bold fs-4xl"> Welcome to Mano Chapel!</h1>
       <!-- Next three lines creates a paragraph describing opening time and location so it is easy to understand for locals -->
+       <!-- For all fs and mt functions, their resources were from the following: (GetBootstrap, https://getbootstrap.com/docs/6.0/utilities/font-size/, n.d.-b; GetBootstrap, https://getbootstrap.com/docs/4.0/utilities/spacing/, n.d.-d) -->
       <p class="fs-2xl mt-6">We are open all Sundays at 10:00AM AEST! Please visit us at 165 Shannon Avenue, Manifold Heights, Victoria, 3218 AU</p>
       <p class="fs-2xl mt-6">We're just across the street from Geelong West Coles!</p>
 <p class="fs-2xl mt-6">So come down and meet us! We would love to see you there!</p>
@@ -119,6 +122,7 @@
         </div>
       </div>
       <!-- iframe sets a Google Map of the churches location to help users find its location easily -->
+       <!-- Code for linking a map into the page from W3Schools, https://www.w3schools.com/tags/tag_iframe.asp, n.d.-g -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25105.282296006164!2d144.31354879252422!3d-38.13646574272172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad413fcdb28d3a7%3A0x3ca2f3deee1515fd!2sManifold%20Heights%20Baptist%20Church!5e0!3m2!1sen!2sau!4v1793943426376!5m2!1sen!2sau" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
   </div>
